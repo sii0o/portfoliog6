@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.CSS">
+    <script src="calc.js"></script>
+</head>
+
+<body>
+    <h1>CALCULATRICE</h1>
+
+
+    <label>Nombre 1</label>
+    <input type="text" name="t1" id="t1" placeholder="saisir un nombre">
+
+    <label>Nombre 2</label>
+    <input type="text" name="t2" id="t2" placeholder="saisir un nombre">
+
+
+    <br><br>
+    <button onclick="somme()">+</button>
+
+    <button onclick="soustraction()">-</button>
+
+    <button onclick="multiplication()">x</button>
+
+    <button onclick="division()">/</button>
+    <br><br>
+
+    <button onclick="permute()">Permutation</button>
+
+    <button onclick="pair()">Parité</button>
+
+    <button onclick="reset()">Reset</button>
+    <br><br>
+
+    <label>Résultat:</label>
+    <input type="text" name="t3" id="resultat" placeholder="résultat" readonly>
+
+    <label>Parité:</label>
+    <input type="text" name="t4" id="parite" placeholder="pair" readonly>
+
+
+    <p>Dans ce tp j'ai appris à créer une calculatrice fonctionnelle</p>
+</body>
+
+</html>
