@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours MCD</title>
+</head>
+
+<body>
+    <h1>Cours MCD</h1>
+    <p>
+        COURS : MCD – MODÈLE CONCEPTUEL DE DONNÉES
+        1. Introduction
+        Le Modèle Conceptuel de Données (MCD) est une étape fondamentale dans la conception d’une base de données. Il
+        permet de représenter les données de manière claire, structurée et indépendante de toute solution technique
+        (SGBD, langage, matériel).
+        Le MCD est utilisé principalement dans la méthode MERISE.
+        2. L’étape de conception d’une base de données
+        La conception d’une base de données est une étape essentielle qui permet de transformer un besoin réel (exprimé
+        par un utilisateur ou une organisation) en une structure de données cohérente et exploitable.
+        Cette étape se déroule avant toute création technique de tables et se fait de manière progressive et méthodique.
+        Elle se divise généralement en trois niveaux : - La conception conceptuelle - La conception logique - La
+        conception physique
+        Le MCD intervient dans la conception conceptuelle.
+        3. Objectifs de l’étape de conception
+        Identifier les données nécessaires au système d’information
+        Organiser ces données de manière logique
+        Décrire les relations entre les données
+        Faciliter la communication entre les utilisateurs et les informaticiens
+        4. La conception conceptuelle des données (MCD)
+        La conception conceptuelle vise à décrire les données sans se préoccuper des contraintes techniques.
+        À ce stade : - On ne parle pas de tables - On ne parle pas de types SQL - On se concentre uniquement sur les
+        données et leurs relations
+        Le MCD est l’outil principal de cette étape.
+        5. Les concepts de base du MCD
+        3.1 Entité
+        Une entité représente un objet réel ou abstrait du système étudié.
+        Exemples : - Élève - Client - Produit
+        Caractéristiques d’une entité : - Elle est unique - Elle possède des attributs
+        3.2 Attribut
+        Un attribut est une information décrivant une entité.
+        Exemples : - Nom - Prénom - Date de naissance
+        3.3 Identifiant
+        L’identifiant est un attribut (ou un ensemble d’attributs) qui permet d’identifier de manière unique une
+        occurrence d’une entité.
+        Exemples : - Numéro d’élève - Code client
+        4. Association
+        Une association représente un lien logique entre deux ou plusieurs entités.
+        Exemples : - Un élève s’inscrit à une classe - Un client passe une commande
+        Une association peut avoir : - Un nom - Des attributs
+        5. Cardinalités
+        Les cardinalités indiquent le nombre minimum et maximum de fois qu’une entité peut participer à une association.
+        Forme générale : (min, max)
+        Exemples : - (0,1) - (1,1) - (0,n) - (1,n)
+        6. Règles de gestion
+        Les règles de gestion définissent les contraintes du système.
+        Exemples : - Un élève ne peut appartenir qu’à une seule classe - Une commande doit être passée par un seul
+        client
+        7. Exemple de MCD
+        Entités : - Élève (id_élève, nom, prénom) - Classe (id_classe, nom_classe)
+        Association : - Inscription
+        Cardinalités : - Élève (1,1) — Inscription — (0,n) Classe
+        8. Du MCD au MLD
+        Après le MCD, on passe au Modèle Logique de Données (MLD) qui prépare la création des tables dans une base de
+        données relationnelle.
+        9. Conclusion
+        Le MCD est une étape essentielle pour garantir une base de données cohérente, évolutive et compréhensible. Une
+        bonne modélisation permet d’éviter de nombreuses erreurs lors de la phase de développement.
+
+    </p>
+
+</body>
+
+</html>
